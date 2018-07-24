@@ -2,14 +2,14 @@
 
 Below is the detailed outline of the steps required to configure your own Jupyter Data Science Notebook Server on Amazon Web Services: 
 
-1.	Create SSH Key & Security Group on AWS
-	a.	Create a SSH key in bash by using command “mkdir –p .ssh)
-		i.	If you do command (ls ~/. Ssh) it should show id_rsa and id_rsa.pub which are your public and private keys
-	b.	Then, you use command (cat ~/.ssh/id_rsa.pub) to generate your ssh~rsa
-	c.	Log onto AWS and go into SSH keys in your settings
-	d.	Add in the ssh~rsa that you recreated in the SSH keys
-	e.	Create security group (includes ssh (4 types))
-2.	Launch a new EC2 Instance
+1. Create SSH Key & Security Group on AWS
+    1. Create a SSH key in bash by using command `mkdir –p .ssh`)
+        1. If you do command (ls `~/. ssh`) it should show id_rsa and id_rsa.pub which are your public and private keys
+	1. Then, you use command (cat ~/.ssh/id_rsa.pub) to generate your ssh~rsa
+	1. Log onto AWS and go into SSH keys in your settings
+	1. Add in the ssh~rsa that you recreated in the SSH keys
+	1. Create security group (includes ssh (4 types))
+1. Launch a new EC2 Instance
 	a.	Create Key Pair
 	b.	Add existing security group
 	c.	Review (it should be on Ubuntu, t2 micro, security groups, etc.)
