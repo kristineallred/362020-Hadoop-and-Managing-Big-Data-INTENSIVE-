@@ -15,10 +15,10 @@ Below is the detailed outline of the steps required to configure your own Jupyte
         1. Review (it should be on Ubuntu, t2 micro, security groups, etc.)
 	1. Then, go into Bash and use command `ssh git@github.com`
 	1. Then, you use command `ssh ubuntu@ipaddress`
-	          1. This is the public ip address from your ec2 instance
+	1. This is the public ip address from your ec2 instance
 1. Provision new instance with Docker
         1. To do this, you should already see ubuntu@ip
-	          1. if not, you will use command `ssh ubuntu$ipaddress –i ~/.ssh/id_rsa`
+	1. If not, you will use command `ssh ubuntu$ipaddress –i ~/.ssh/id_rsa`
         1. Then, you use the command `curl –sSL https://get.docker.com | sh` which will execute the docker script
 	1. Then, you have to use the command `sudo usermod –aG docker Ubuntu`
 1. Pull the ds-nb image
@@ -31,17 +31,16 @@ Below is the detailed outline of the steps required to configure your own Jupyte
 1. Get the token and use Jupyter 
 	1. To get the token, you need to get the status ID so you use command “j” which will populate it
 	1. Then, you run command `docker exec 1234 (first four characters of the status ID) jupyter notebook list`
-	          1. This will populate the token = 
+	1. This will populate the token = 
         1. Then, you can go grab the public IP address from AWS and put :443 at the end at launch that in a browser to open the Jupyter notebook 
 	1. Use the token above for the website and you’re in!
 	
 
 	
 	
+Below is the financial analysis and detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three different kinds of EC 2 instances:
 	
-	Below is the financial analysis and detailed budget of the costs of running a Jupyter Data Science Notebook Server for three months using at least three different kinds of EC 2 instances:
-	
-	Below is the price breakdown for On Demand Pricing and Spot Pricing for the same three instances (t2.micro, m4.large, m5.xlarge)
+Below is the price breakdown for On Demand Pricing and Spot Pricing for the same three instances (t2.micro, m4.large, m5.xlarge)
 On demand pricing:
 t2.micro	1	Variable	1 GiB	EBS Only	$0.0116 per Hour
 
